@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { ParticleField, FloatingGeometry } from './ThreeEffects';
 
 // ─── Icons ────────────────────────────────────────────────────────────────────
 
@@ -222,6 +223,7 @@ function Hero() {
         />
         <div className="hero__overlay" />
       </div>
+      <ParticleField className="hero__particles" scrollFade={true} />
 
       <div className="hero__content container">
         <div className="hero__badge">🔥 Limited free trial slots available this week</div>
@@ -592,6 +594,7 @@ function FinalCTA() {
   const [ref, visible] = useReveal();
   return (
     <section className="final-cta">
+      <ParticleField className="final-cta__particles" scrollFade={false} />
       <div className="container">
         <div ref={ref} className={`final-cta__inner reveal${visible ? ' visible' : ''}`}>
           <span className="eyebrow">Start Now — It's Free</span>
@@ -656,6 +659,13 @@ export default function App() {
       <Hero />
       <Benefits />
       <Gallery />
+      <section className="three-divider">
+        <FloatingGeometry />
+        <div className="three-divider__text container">
+          <h2>Transform Your <span className="text-accent">Limits</span></h2>
+          <p>Where science meets dedication.</p>
+        </div>
+      </section>
       <BookingForm />
       <Testimonials />
       <FinalCTA />
