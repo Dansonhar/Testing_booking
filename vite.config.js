@@ -4,6 +4,9 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ command }) => ({
   plugins: [react()],
   base: command === 'build' ? '/Testing_booking/' : '/',
+  build: {
+    outDir: 'docs',
+  },
   server: {
     port: 3000,
     host: true,
