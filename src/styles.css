@@ -844,6 +844,34 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: var(--text-muted);
 }
 
+/* Benefits + DNA Helix */
+.benefits {
+  position: relative;
+}
+.benefits__three { z-index: 0; }
+.benefits .container { position: relative; z-index: 1; }
+
+/* Gallery + Meteor Trails */
+.gallery {
+  position: relative;
+}
+.gallery__three { z-index: 0; }
+.gallery .container { position: relative; z-index: 1; }
+
+/* Booking + Energy Ring */
+.booking {
+  position: relative;
+}
+.booking__three { z-index: 0; }
+.booking .container { position: relative; z-index: 1; }
+
+/* Reviews + Wave Terrain */
+.reviews {
+  position: relative;
+}
+.reviews__three { z-index: 0; }
+.reviews .container { position: relative; z-index: 1; }
+
 /* Final CTA particles */
 .final-cta__particles {
   z-index: 0;

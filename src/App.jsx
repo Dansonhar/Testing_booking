@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { ParticleField, FloatingGeometry } from './ThreeEffects';
+import { ParticleField, FloatingGeometry, DNAHelix, WaveTerrain, EnergyRing, MeteorTrails } from './ThreeEffects';
 
 // ─── Icons ────────────────────────────────────────────────────────────────────
 
@@ -274,6 +274,7 @@ function Benefits() {
   const [headRef, headVisible] = useReveal();
   return (
     <section className="benefits section" id="benefits">
+      <DNAHelix className="benefits__three" />
       <div className="container">
         <div ref={headRef} className={`section-head reveal${headVisible ? ' visible' : ''}`}>
           <span className="eyebrow">Why QFit Studio</span>
@@ -307,6 +308,7 @@ function Gallery() {
   const [headRef, headVisible] = useReveal();
   return (
     <section className="gallery section" id="gallery">
+      <MeteorTrails className="gallery__three" />
       <div className="container">
         <div ref={headRef} className={`section-head reveal${headVisible ? ' visible' : ''}`}>
           <span className="eyebrow">The Experience</span>
@@ -408,6 +410,7 @@ function BookingForm() {
 
   return (
     <section className="booking section" id="booking">
+      <EnergyRing className="booking__three" />
       <div className="container">
         <div className="booking__wrap">
           {/* Left copy */}
@@ -547,6 +550,7 @@ function Testimonials() {
   const [headRef, headVisible] = useReveal();
   return (
     <section className="reviews section" id="reviews">
+      <WaveTerrain className="reviews__three" />
       <div className="container">
         <div ref={headRef} className={`section-head reveal${headVisible ? ' visible' : ''}`}>
           <span className="eyebrow">Real Results</span>
